@@ -54,6 +54,7 @@ public class Connection extends DataManager {
 
     @Override
     public ResultSet get(String query) {
+        if (!Inception.settings.statement("Connection.use")) return null;
         {
             ResultSet result = null;
             try {
@@ -71,6 +72,7 @@ public class Connection extends DataManager {
 
     @Override
     public int set(String query) {
+        if (!Inception.settings.statement("Connection.use")) return 0;
         int result = 0;
         try {
             if (connection() != null) connection = connection();

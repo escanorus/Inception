@@ -17,7 +17,6 @@ public final class Inception extends JavaPlugin {
     public void onEnable() {
         instance = this;
         settings = new Configurations(instance, "settings.yml");
-        settings.create();
         connection = new Connection();
     }
 
