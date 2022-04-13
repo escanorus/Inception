@@ -1,0 +1,7 @@
+name: Inception
+version: '${project.version}'
+main: ru.aracle.inception.Inception
+api-version: 1.18
+prefix: Inception
+authors: [ aracle ]
+description: API for minecraft plugins
