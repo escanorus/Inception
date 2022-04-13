@@ -22,6 +22,7 @@ public final class Inception extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        settings.reload();
         settings.save();
         if (connection != null) connection.close();
     }
